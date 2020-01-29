@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47AEDB84-0F83-416D-A3C2-865D49A9C39F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ailehekimliğibilgisistemi</RootNamespace>
+    <AssemblyName>ailehekimliğibilgisistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ahbsdatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ahbsdatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ahbsdatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ahbsdatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ahbsdatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ahbsdatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ahbsdatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ahbsdatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="close2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="close2.Designer.cs">
+      <DependentUpon>close2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseForm.Designer.cs">
+      <DependentUpon>CloseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorIslemleriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorIslemleriForm.Designer.cs">
+      <DependentUpon>DoktorIslemleriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorEkleForm.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DoktorEkleForm.Designer.cs">
+      <DependentUpon>DoktorEkleForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="MuayeneFormIlac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuayeneFormIlac.Designer.cs">
+      <DependentUpon>MuayeneFormIlac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuayeneFormIstem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuayeneFormIstem.Designer.cs">
+      <DependentUpon>MuayeneFormIstem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuayeneFormTanı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuayeneFormTanı.Designer.cs">
+      <DependentUpon>MuayeneFormTanı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaBilgiEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaBilgiEkleForm.Designer.cs">
+      <DependentUpon>HastaBilgiEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaKabulForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaKabulForm.Designer.cs">
+      <DependentUpon>HastaKabulForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaBilgisiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>HastaBilgisiForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuayeneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuayeneForm.Designer.cs">
+      <DependentUpon>MuayeneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="close2.resx">
+      <DependentUpon>close2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseForm.resx">
+      <DependentUpon>CloseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorEkleForm.resx">
+      <DependentUpon>DoktorEkleForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorIslemleriForm.resx">
+      <DependentUpon>DoktorIslemleriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuayeneFormIlac.resx">
+      <DependentUpon>MuayeneFormIlac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuayeneFormIstem.resx">
+      <DependentUpon>MuayeneFormIstem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuayeneFormTanı.resx">
+      <DependentUpon>MuayeneFormTanı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaBilgiEkleForm.resx">
+      <DependentUpon>HastaBilgiEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaBilgisiForm.resx">
+      <DependentUpon>HastaBilgisiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaKabulForm.resx">
+      <DependentUpon>HastaKabulForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuayeneForm.resx">
+      <DependentUpon>MuayeneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ahbsdatabaseDataSet.xsc">
+      <DependentUpon>ahbsdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ahbsdatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ahbsdatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ahbsdatabaseDataSet.xss">
+      <DependentUpon>ahbsdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ahbsdatabaseDataSet1.xsc">
+      <DependentUpon>ahbsdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ahbsdatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ahbsdatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ahbsdatabaseDataSet1.xss">
+      <DependentUpon>ahbsdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ahbsdatabaseDataSet2.xsc">
+      <DependentUpon>ahbsdatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ahbsdatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ahbsdatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ahbsdatabaseDataSet2.xss">
+      <DependentUpon>ahbsdatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ahbsdatabaseDataSet3.xsc">
+      <DependentUpon>ahbsdatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ahbsdatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ahbsdatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ahbsdatabaseDataSet3.xss">
+      <DependentUpon>ahbsdatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
